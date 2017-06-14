@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>Hero H.Q. Néo</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="c17 engineering" />
+    <meta name="copyright" content="c17 engineering" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+    <meta name="apple-mobile-web-app-title" content="Hero H.Q. Néo">
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="image_src" href="images/favicon.png" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="Scripts/jquery-3.1.1.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="home.html" class="logo">
+                            <img src="images/herohqbanner.png" alt="" width="350" height="130">
+                        </a>
+                        <div class="desc">
+                            <p>Besoin d'un héro?<br />Trouvez celui qu'il vous faut!</p>
+                            <p><a class="link" href="search.html"><strong>23 héros</strong> à découvrir !</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="mobile-menu-btn">
+                <i class="glyphicon glyphicon-menu-hamburger"></i>
+            </button>
+        </header>
+
+        <main id="main">
+            <div class="container">
+                <div class="row">
+                    <!-- Barre de navigation -->
+                    <div class="col-sm-3" id="col-nav">
+                        <button type="button" id="mobile-close-btn">
+                            <i class="glyphicon glyphicon-remove"></i>
+                        </button>
+                        <nav id="nav">
+                            <ul class="menu">
+                                <li class="page_hom">
+                                    <a href="home.html">
+                                        <span>Accueil</span>
+                                    </a>
+                                </li>
+                                <li class="page_rec">
+                                    <a href="search.html">Recherche détaillée</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- Search -->
+                    <div class="col-xs-12 col-sm-9">
+                        <div class="content" id="content_search">
+                            <h1 class="page-title">Tout les héros</h1>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="panel">
+                                        <div class="row imgback">
+                                            <div class="hidden-xs col-sm-3"></div>
+                                            <div class="col-xs-12 col-sm-9 fp">
+                                                <div class="filters">
+                                                    <!-- Formulaire -->
+                                                    <form action="#" novalidate>
+                                                        <div class="filter">
+                                                            <p><label for="">Nom du héro</label></p>
+                                                            <p><input type="text" placeholder="ex: Reaper"></p>
+                                                        </div>
+                                                        <!--<div class="filter">
+                                                            <p><label for="">Catégorie</label></p>
+                                                            <p>
+                                                                <select name="" id="">
+                                                                    <option value=""></option>
+                                                                    <option value="meat">Viandes</option>
+                                                                    <option value="fruit">Fruits</option>
+                                                                    <option value="vegetable">Légumes</option>
+                                                                    <option value="fish">Poissons</option>
+                                                                    <option value="alcool">Alcools</option>
+                                                                    <option value="">Etc...</option>
+                                                                </select>
+                                                            </p>
+                                                        </div>-->
+                                                        <!--<div class="filter">
+                                                            <p><label for="">Nombre de calories <span class="fwn">(kcal/100g)</span></label></p>
+                                                            <p>
+                                                                <span class="span-label">entre :</span>
+                                                                <input type="number" class="mr0" placeholder="ex: 70">
+                                                                <span class="span-label">et</span>
+                                                                <input type="number" placeholder="ex: 220">
+                                                            </p>
+                                                        </div>-->
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="result">
+                                        <div class="heroes row">
+                                            <div class="col-xs-6 col-sm-3 hero">
+                                                <a href="hero_details.html">
+                                                    <img src="images/Dva_portrait.png" alt="D.VA" height="175" width="150">
+                                                    <div class="bot">
+                                                        <p class="name">D.VA</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-xs-6 col-sm-3 hero">
+                                                <a href="hero_details.html">
+                                                    <img src="images/Hanzo_portrait.png" alt="D.VA" height="175" width="150">
+                                                    <div class="bot">
+                                                        <p class="name">Hanzo</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-xs-6 col-sm-3 hero">
+                                                <a href="hero_details.html">
+                                                    <img src="images/Sombra_portrait.png" alt="D.VA" height="175" width="150">
+                                                    <div class="bot">
+                                                        <p class="name">Sombra</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-xs-6 col-sm-3 hero">
+                                                <a href="hero_details.html">
+                                                    <img src="images/Soldier76_portrait.png" alt="D.VA" height="175" width="150">
+                                                    <div class="bot">
+                                                        <p class="name">Soldier 76</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-xs-6 col-sm-3 hero">
+                                                <a href="hero_details.html">
+                                                    <img src="images/Symmetra_portrait.png" alt="D.VA" height="175" width="150">
+                                                    <div class="bot">
+                                                        <p class="name">Symmetra</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-xs-6 col-sm-3 hero">
+                                                <a href="hero_details.html">
+                                                    <img src="images/Junkrat_portrait.png" alt="D.VA" height="175" width="150">
+                                                    <div class="bot">
+                                                        <p class="name">Junkrat</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-xs-6 col-sm-3 hero">
+                                                <a href="hero_details.html">
+                                                    <img src="images/Roadhog_portrait_m.png" alt="D.VA" height="175" width="150">
+                                                    <div class="bot">
+                                                        <p class="name">Roadhog</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-xs-6 col-sm-3 hero">
+                                                <a href="hero_details.html">
+                                                    <img src="images/Mccree_portrait.png" alt="D.VA" height="175" width="150">
+                                                    <div class="bot">
+                                                        <p class="name">Mc Cree</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-xs-6 col-sm-3 hero">
+                                                <a href="hero_details.html">
+                                                    <img src="images/Pharah_portrait.png" alt="D.VA" height="175" width="150">
+                                                    <div class="bot">
+                                                        <p class="name">Pharah</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--<div class="row showmore">
+                                    <div class="col-xs-12">
+                                        <button type="button" class="btn btn_color1"><span class="glyphicon glyphicon-chevron-down"></span>Afficher d'avantage</button>
+                                    </div>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="container">
+                <div class="row footer-hero-wrap">
+                    <div class="hidden-xs col-sm-3">
+                        <div class="footer-hero"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-9">
+
+                        <p>Le QG des héros est situé 8 avenue de la Justice. Tél: 06.65.59.66.30.30 Mail: ausecours@hero.com</p>
+
+                        <a href="home.html" class="btn btn_color1">
+                            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                            Revenir à l'acceuil
+                        </a>
+
+                        <div class="hr"></div>
+                        <p class="copyright">Créer pour le Formation Néo. Images tirés d'Overwatch™, un jeu Blizzard Entertainment™.</p>
+                        <p class="copyright">Ne pas publiez sans l'accord de l'éditeur.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- Popin -->
+    <!--<div class="popin" data-popin="connect_popin">
+        <div class="popin-content">
+            <div class="popin-scroll">
+                <p class="popin-title">Connexion</p>
+                <form action="#">
+                    <p>
+                        <label for="co_user" class="fwb">Identifiant (email)</label>
+                        <input id="co_user" class="wide" type="text" />
+                    </p>
+                    <p>
+                        <label for="co_pwd" class="fwb">Mot de passe</label>
+                        <input id="co_pwd" class="wide" type="text" />
+                    </p>
+                    <p class="ac nm mt2">
+                        <button type="button" class="btn btn_big btn_color1"><span class="glyphicon glyphicon-ok"></span><span class="fwb uc">Valider</span></button>
+                    </p>
+                </form>
+            </div>
+            <button class="close popin-close"><span class="glyphicon glyphicon-remove"></span></button>
+        </div>
+        <div class="popin-backlayer"></div>
+    </div>
+
+    <div id="mobile-back-layer"></div>-->
+</body>
+</html>

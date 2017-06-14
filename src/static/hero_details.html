@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>Hero H.Q. Néo</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="c17 engineering" />
+    <meta name="copyright" content="c17 engineering" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+    <meta name="apple-mobile-web-app-title" content="Hero H.Q. Néo">
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="image_src" href="images/favicon.png" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="Scripts/jquery-3.1.1.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="home.html" class="logo">
+                            <img src="images/herohqbanner.png" alt="" width="350" height="130">
+                        </a>
+                        <div class="desc">
+                            <p>Besoin d'un héro?<br />Trouvez celui qu'il vous faut!</p>
+                            <p><a class="link" href="search.html"><strong>23 héros</strong> à découvrir !</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="mobile-menu-btn">
+                <i class="glyphicon glyphicon-menu-hamburger"></i>
+            </button>
+        </header>
+
+        <main id="main">
+            <div class="container">
+                <div class="row">
+                    <!-- Barre de navigation -->
+                    <div class="col-sm-3" id="col-nav">
+                        <button type="button" id="mobile-close-btn">
+                            <i class="glyphicon glyphicon-remove"></i>
+                        </button>
+                        <nav id="nav">
+                            <ul class="menu">
+                                <li class="page_hom">
+                                    <a href="home.html">
+                                        <span>Accueil</span>
+                                    </a>
+                                </li>
+                                <li class="page_rec">
+                                    <a href="search.html">Recherche détaillée</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- Hero Details -->
+                    <div class="col-xs-12 col-sm-9">
+                        <div class="content" id="hero_details">
+                            <h1 class="page-title">Un héro en détail</h1>
+
+                            <section class="section details">
+                                <div class="row">
+                                    <div class="col-vxs-12 col-xs-6 col-sm-5">
+                                        <div class="avatar-wrap">
+                                            <img class="avatar" src="images/Dva_portrait.png" alt="D.Va">
+                                        </div>
+                                    </div>
+                                    <div class="col-vxs-12 col-xs-6 col-sm-7">
+                                        <div class="infos">
+                                            <h1 class="name">D.Va</h1>
+                                            <p><span><span class="fwb">Citation :</span> Place aux jeunes!</span></p>
+                                            <p><span><span class="fwb">Âge :</span> 19 ans</span></p>
+                                            <p><span><span class="fwb">Pouvoir :</span> Conductrice de Meka</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="container">
+                <div class="row footer-hero-wrap">
+                    <div class="hidden-xs col-sm-3">
+                        <div class="footer-hero"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-9">
+
+                        <p>Le QG des héros est situé 8 avenue de la Justice. Tél: 06.65.59.66.30.30 Mail: ausecours@hero.com</p>
+
+                        <a href="home.html" class="btn btn_color1">
+                            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                            Revenir à l'acceuil
+                        </a>
+
+                        <div class="hr"></div>
+                        <p class="copyright">Créer pour le Formation Néo. Images tirés d'Overwatch™, un jeu Blizzard Entertainment™.</p>
+                        <p class="copyright">Ne pas publiez sans l'accord de l'éditeur.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Popin -->
+    <!--<div class="popin" data-popin="connect_popin">
+        <div class="popin-content">
+            <div class="popin-scroll">
+                <p class="popin-title">Connexion</p>
+                <form action="#">
+                    <p>
+                        <label for="co_user" class="fwb">Identifiant (email)</label>
+                        <input id="co_user" class="wide" type="text" />
+                    </p>
+                    <p>
+                        <label for="co_pwd" class="fwb">Mot de passe</label>
+                        <input id="co_pwd" class="wide" type="text" />
+                    </p>
+                    <p class="ac nm mt2">
+                        <button type="button" class="btn btn_big btn_color1"><span class="glyphicon glyphicon-ok"></span><span class="fwb uc">Valider</span></button>
+                    </p>
+                </form>
+            </div>
+            <button class="close popin-close"><span class="glyphicon glyphicon-remove"></span></button>
+        </div>
+        <div class="popin-backlayer"></div>
+    </div>
+
+    <div id="mobile-back-layer"></div>-->
+</body>
+</html>

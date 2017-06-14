@@ -1,0 +1,38 @@
+<!-- Home -->
+<div class="col-xs-12 col-sm-9">
+    <div class="content" id="content_home">
+        <h1 class="page-title">Bienvenue à la base des Héros !</h1>
+
+        <!-- Héros disponibles -->
+        <section class="section">
+            <h2 class="title">~ Nos héros disponibles ~</h2>
+            <div class="heroes row">
+                
+                <div *ngFor="let hero of heroes" class="col-xs-6 col-sm-3 hero">
+                    <a routerLink="/heroes-detail/{{hero.Id}}">
+                        <img src="assets/images/{{hero.Photo}}" alt="{{hero.Name}}" height="175" width="150">
+                        <div class="bot">
+                            <p class="name">{{hero.Name}}</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Nouveau héro -->
+        <section class="section newhero">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="c">Vous êtes un héro? Rejoingez nous!</p>
+                    <p class="b">
+                        <a routerLink="/heroes-new" class="btn btn_color1">
+                            <span class="glyphicon glyphicon-plus-sign"></span>
+                            <span>Créez un nouveau héro !</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
