@@ -14,7 +14,7 @@ import { HeroesService } from '../services/heroes.service'
 
 const appRoutes: Routes = [
   { path: 'heroes-list', component: HeroesListComponent },
-  { path: 'heroes-detail', component: HeroesDetailComponent },
+  { path: 'heroes-detail/:id', component: HeroesDetailComponent },
   { path: 'heroes-new', component: HeroesNewComponent },
   { path: 'search', component: SearchComponent },
   { path: '', redirectTo: '/heroes-list', pathMatch: 'full' }
