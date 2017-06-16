@@ -1,0 +1,61 @@
+<!-- Nouveau Hero -->
+<div class="col-xs-12 col-sm-9">
+    <div class="content" id="new_hero">
+
+        <h1 class="page-title">Nouvelle candidature</h1>
+        <section class="section">
+            <form (ngSubmit)="createHero()" #heroForm="ngForm">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <p class="line">
+                            <label for="nom">Quel est votre nom de héro?</label>
+                            <input id="nom" type="text" class="mb0 wide" [(ngModel)]="hero.Nom" name="Nom" required>
+                        </p>
+                        <p class="line">
+                            <label for="age">Quel âge avez vous?</label>
+                            <input id="age" type="number" class="mb0 wide" [(ngModel)]="hero.Age" name="Age" required>
+                        </p>
+                        <p class="line">
+                            <label for="pouvoir">Quel est votre pouvoir?</label>
+                            <input id="pouvoir" type="text" class="mb0 wide" [(ngModel)]="hero.Pouvoir" name="Pouvoir" required>
+                        </p>
+                        <p class="line">
+                            <label for="citation">Quel est votre citation de référance?</label>
+                            <input id="citation" type="text" class="mb0 wide" [(ngModel)]="hero.Citation" name="Citation" required>
+                        </p>
+                    </div>
+                    <div class="col-xs-6">
+                        <p class="line">
+                            <label for="">Photo du héro</label>
+                            <input type="file" class="mb0">
+                        </p>
+                        <p class="line ac">
+                            <img class="current_img" src="assets/images/hero_img_placeholder.png" alt="Visuel hero" width="200" height="200">
+                        </p>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="hr mt2 mb2"></div>
+                    </div>
+
+                    <div class="col-xs-12 ac">
+                        <button type="submit" class="btn btn_color3 recette_save" (click)="createHero()"><span class="glyphicon glyphicon-ok mr0"></span><span>Valider ma candidature</span></button>
+                    </div>
+                    <!-- Afficher au clic sur "valider ma recette" lorsque tout s'est bien déroulé -->
+                    <div class="col-xs-12" *ngIf="heroCreated">
+                        <p class="ac mt2 tb">
+                            <span class="glyphicon glyphicon-thumbs-up color3"></span>
+                            <span>Votre héros a bien été ajouté !</span>
+                        </p>
+                    </div>
+
+                    <div class="col-xs-12" *ngIf="error">
+                        <p class="ac mt2 tb">
+                            <span class="glyphicon glyphicon-thumbs-down color2"></span>
+                            <span class="color2">Merci de saisir tous les champs du formulaire !</span>
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>

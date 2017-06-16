@@ -10,9 +10,9 @@
                 
                 <div *ngFor="let hero of heroes" class="col-xs-6 col-sm-3 hero">
                     <a [routerLink]="['/heroes-detail', hero.Id]">
-                        <img src="assets/images/{{hero.Photo}}" alt="{{hero.Name}}" height="175" width="150">
+                        <img src="assets/images/{{hero.Photo}}" alt="{{hero.Nom}}" height="175" width="150">
                         <div class="bot">
-                            <p class="name">{{hero.Name}}</p>
+                            <p class="name">{{hero.Nom}}</p>
                         </div>
                     </a>
                 </div>
