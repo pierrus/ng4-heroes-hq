@@ -35,7 +35,6 @@ export class HeroesNewComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log("init");
     this.hero = new Hero();
   }
 }
