@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { HeroesService } from '../services/heroes.service';
-import { Hero } from '../services/hero';
+import { HeroesService } from './services/heroes.service';
+import { Hero } from './services/hero';
 
 @Component({
   selector: 'search',
@@ -14,15 +14,12 @@ export class SearchComponent implements OnInit {
 
   ngOnInit()
   {
-    this.heroesService.getHeroes().subscribe(heroes => this.heroes = heroes);
+    this.heroesService.heroesObservable.subscribe(heroes => this.heroes = heroes);
   }
 
   search(searchTerm: string) {
 
     console.log('Searching ' + searchTerm);
-
-    if (searchTerm === '' || searchTerm == null)
-      this.heroesService.getHeroes().subscribe(heroes => this.heroes = heroes);
 
     this.heroesService.searchHeroes(searchTerm).subscribe(heroes => this.heroes = heroes);
   }

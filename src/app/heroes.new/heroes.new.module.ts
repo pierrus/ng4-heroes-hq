@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { HeroesNewComponent } from './heroes.new.component';
 
-import { HeroesService } from '../../services/heroes.service'
+import { HeroesService } from '../services/heroes.service'
 
 const moduleRoutes: Routes = [
   { path: '', component: HeroesNewComponent }

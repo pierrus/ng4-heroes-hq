@@ -9,12 +9,12 @@ import { HeroesListComponent } from './heroes.list.component';
 import { HeroesDetailComponent } from './heroes.detail.component';
 import { SearchComponent } from './search.component';
 
-import { HeroesService } from '../services/heroes.service'
+import { HeroesService } from './services/heroes.service'
 
 const appRoutes: Routes = [
   { path: 'heroes-list', component: HeroesListComponent },
   { path: 'heroes-detail/:id', component: HeroesDetailComponent },
-  { path: 'heroes-new', loadChildren: 'app/heroes.new.component/heroes.new.module#HeroesNewModule' },
+  { path: 'heroes-new', loadChildren: 'app/heroes.new/heroes.new.module#HeroesNewModule' },
   { path: 'search', component: SearchComponent },
   { path: '', redirectTo: '/heroes-list', pathMatch: 'full' }
 ];

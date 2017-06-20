@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { Subject }           from 'rxjs/Subject';
 
-import { HeroesService } from '../services/heroes.service';
-import { Hero } from '../services/hero';
+import { HeroesService } from './services/heroes.service';
+import { Hero } from './services/hero';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +21,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit()
   {
-    this.heroesService.countHeroes().subscribe(total => this.heroesTotal = total);
+    this.heroesService.heroesTotalObservable.subscribe(total => this.heroesTotal = total);
   }
 }
